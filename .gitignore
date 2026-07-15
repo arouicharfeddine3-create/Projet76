@@ -1,0 +1,36 @@
+# Gradle files
+.gradle/
+build/
+*.apk
+*.aab
+*.jks
+*.keystore
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Android Studio files
+.idea/
+*.iml
+*.iws
+*.ipr
+*.swp
+*~
+.DS_Store
+
+# Kotlin
+kotlin-js-store/
+
+# Misc
+*.log
+*.pyc
+.env
+.vscode/
+
+# Node
+node_modules/
+npm-debug.log
+
+# Distribution
+dist/
+*.egg-info/
