@@ -10,7 +10,6 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        maven("https://jcenter.bintray.com/")
     }
 }
 rootProject.name = "Projet76"

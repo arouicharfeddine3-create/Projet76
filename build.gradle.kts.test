@@ -1,0 +1,6 @@
+// Test if gradle wrapper can run with no plugins
+tasks.register("hello") {
+    doLast {
+        println("Hello!")
+    }
+}
