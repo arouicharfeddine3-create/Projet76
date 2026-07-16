@@ -18,16 +18,18 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      # استخدم Gradle Action بدلاً من gradlew
-      - name: Build APK with Gradle
+      # بناء التطبيق مع تحديد إصدار Gradle صراحة
+      - name: Build APK
         uses: gradle/actions/setup-gradle@v3
         with:
+          gradle-version: '8.5'          # <-- هام جداً
           arguments: assembleDebug
 
-      # تشغيل الاختبارات بنفس الطريقة
+      # تشغيل الاختبارات بنفس الإصدار
       - name: Run Tests
         uses: gradle/actions/setup-gradle@v3
         with:
+          gradle-version: '8.5'
           arguments: test
 
       - name: Upload APK
